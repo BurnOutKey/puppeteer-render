@@ -43,7 +43,7 @@ const scrapeLogic = async (res, amount = 5) => {
 
     console.log("Puppeteer's ready!");
     
-    async getToken() {
+    let getToken = async () => {
       const Token = await page.evaluate(async () => {
         return await new Promise((resolve) => {
           window.grecaptcha
